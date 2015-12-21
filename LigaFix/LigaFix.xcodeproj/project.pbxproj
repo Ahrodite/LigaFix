@@ -1,0 +1,586 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		69CBF7A41C27F117002D00F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69CBF7A31C27F117002D00F5 /* Assets.xcassets */; };
+		69CBF7B21C27F117002D00F5 /* LigaFixTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CBF7B11C27F117002D00F5 /* LigaFixTests.swift */; };
+		69CBF7BD1C27F117002D00F5 /* LigaFixUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CBF7BC1C27F117002D00F5 /* LigaFixUITests.swift */; };
+		69CBF7CB1C27F2FB002D00F5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69CBF7CA1C27F2FB002D00F5 /* Images.xcassets */; };
+		69CBF7CD1C27F301002D00F5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69CBF7CC1C27F301002D00F5 /* LaunchScreen.storyboard */; };
+		69CBF7D21C27F31B002D00F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CBF7CF1C27F31B002D00F5 /* AppDelegate.swift */; };
+		69CBF7D31C27F31B002D00F5 /* Int+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CBF7D01C27F31B002D00F5 /* Int+Extensions.swift */; };
+		69CBF7D41C27F31B002D00F5 /* DHNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CBF7D11C27F31B002D00F5 /* DHNavigationController.swift */; };
+		69CBF7DF1C27F43C002D00F5 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CBF7DE1C27F43C002D00F5 /* AboutViewController.swift */; };
+		69CBF7E51C27F462002D00F5 /* FocusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CBF7E11C27F462002D00F5 /* FocusView.swift */; };
+		69CBF7E61C27F462002D00F5 /* FocusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CBF7E21C27F462002D00F5 /* FocusViewController.swift */; };
+		69CBF7E71C27F462002D00F5 /* TimerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CBF7E31C27F462002D00F5 /* TimerType.swift */; };
+		69CBF7E81C27F462002D00F5 /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CBF7E41C27F462002D00F5 /* TimerView.swift */; };
+		69CBF7EC1C27F482002D00F5 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CBF7EA1C27F482002D00F5 /* SettingsView.swift */; };
+		69CBF7ED1C27F482002D00F5 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CBF7EB1C27F482002D00F5 /* SettingsViewController.swift */; };
+		69CBF7F01C27F4C7002D00F5 /* TimerStyleKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CBF7EF1C27F4C7002D00F5 /* TimerStyleKit.swift */; };
+		69CBF7F41C27F638002D00F5 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CBF7F31C27F638002D00F5 /* AboutView.swift */; };
+		69CBF7F61C27F83B002D00F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69CBF7F51C27F83B002D00F5 /* Main.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		69CBF7AE1C27F117002D00F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 69CBF7911C27F117002D00F5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 69CBF7981C27F117002D00F5;
+			remoteInfo = LigaFix;
+		};
+		69CBF7B91C27F117002D00F5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 69CBF7911C27F117002D00F5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 69CBF7981C27F117002D00F5;
+			remoteInfo = LigaFix;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		69CBF7991C27F117002D00F5 /* LigaFix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LigaFix.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		69CBF7A31C27F117002D00F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		69CBF7A81C27F117002D00F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69CBF7AD1C27F117002D00F5 /* LigaFixTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LigaFixTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		69CBF7B11C27F117002D00F5 /* LigaFixTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LigaFixTests.swift; sourceTree = "<group>"; };
+		69CBF7B31C27F117002D00F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69CBF7B81C27F117002D00F5 /* LigaFixUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LigaFixUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		69CBF7BC1C27F117002D00F5 /* LigaFixUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LigaFixUITests.swift; sourceTree = "<group>"; };
+		69CBF7BE1C27F117002D00F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69CBF7CA1C27F2FB002D00F5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		69CBF7CC1C27F301002D00F5 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		69CBF7CF1C27F31B002D00F5 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		69CBF7D01C27F31B002D00F5 /* Int+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Int+Extensions.swift"; path = "LigaFix/Int+Extensions.swift"; sourceTree = "<group>"; };
+		69CBF7D11C27F31B002D00F5 /* DHNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DHNavigationController.swift; sourceTree = "<group>"; };
+		69CBF7DE1C27F43C002D00F5 /* AboutViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AboutViewController.swift; path = About/AboutViewController.swift; sourceTree = "<group>"; };
+		69CBF7E11C27F462002D00F5 /* FocusView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FocusView.swift; path = Focus/FocusView.swift; sourceTree = "<group>"; };
+		69CBF7E21C27F462002D00F5 /* FocusViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FocusViewController.swift; path = Focus/FocusViewController.swift; sourceTree = "<group>"; };
+		69CBF7E31C27F462002D00F5 /* TimerType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TimerType.swift; path = Focus/TimerType.swift; sourceTree = "<group>"; };
+		69CBF7E41C27F462002D00F5 /* TimerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TimerView.swift; path = Focus/TimerView.swift; sourceTree = "<group>"; };
+		69CBF7EA1C27F482002D00F5 /* SettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsView.swift; path = Settings/SettingsView.swift; sourceTree = "<group>"; };
+		69CBF7EB1C27F482002D00F5 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsViewController.swift; path = Settings/SettingsViewController.swift; sourceTree = "<group>"; };
+		69CBF7EF1C27F4C7002D00F5 /* TimerStyleKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerStyleKit.swift; sourceTree = "<group>"; };
+		69CBF7F31C27F638002D00F5 /* AboutView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AboutView.swift; path = About/AboutView.swift; sourceTree = "<group>"; };
+		69CBF7F51C27F83B002D00F5 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		69CBF7961C27F117002D00F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69CBF7AA1C27F117002D00F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69CBF7B51C27F117002D00F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		69CBF7901C27F117002D00F5 = {
+			isa = PBXGroup;
+			children = (
+				69CBF79B1C27F117002D00F5 /* LigaFix */,
+				69CBF7B01C27F117002D00F5 /* LigaFixTests */,
+				69CBF7BB1C27F117002D00F5 /* LigaFixUITests */,
+				69CBF79A1C27F117002D00F5 /* Products */,
+				69CBF7D01C27F31B002D00F5 /* Int+Extensions.swift */,
+			);
+			sourceTree = "<group>";
+		};
+		69CBF79A1C27F117002D00F5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				69CBF7991C27F117002D00F5 /* LigaFix.app */,
+				69CBF7AD1C27F117002D00F5 /* LigaFixTests.xctest */,
+				69CBF7B81C27F117002D00F5 /* LigaFixUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		69CBF79B1C27F117002D00F5 /* LigaFix */ = {
+			isa = PBXGroup;
+			children = (
+				69CBF7CF1C27F31B002D00F5 /* AppDelegate.swift */,
+				69CBF7D11C27F31B002D00F5 /* DHNavigationController.swift */,
+				69CBF7E01C27F448002D00F5 /* About */,
+				69CBF7E91C27F469002D00F5 /* Focus */,
+				69CBF7EE1C27F488002D00F5 /* Settings */,
+				69CBF7F11C27F4CB002D00F5 /* StyleKit */,
+				69CBF7CA1C27F2FB002D00F5 /* Images.xcassets */,
+				69CBF7A31C27F117002D00F5 /* Assets.xcassets */,
+				69CBF7F21C27F511002D00F5 /* Supporting Files */,
+				69CBF7CC1C27F301002D00F5 /* LaunchScreen.storyboard */,
+				69CBF7F51C27F83B002D00F5 /* Main.storyboard */,
+			);
+			path = LigaFix;
+			sourceTree = "<group>";
+		};
+		69CBF7B01C27F117002D00F5 /* LigaFixTests */ = {
+			isa = PBXGroup;
+			children = (
+				69CBF7B11C27F117002D00F5 /* LigaFixTests.swift */,
+				69CBF7B31C27F117002D00F5 /* Info.plist */,
+			);
+			path = LigaFixTests;
+			sourceTree = "<group>";
+		};
+		69CBF7BB1C27F117002D00F5 /* LigaFixUITests */ = {
+			isa = PBXGroup;
+			children = (
+				69CBF7BC1C27F117002D00F5 /* LigaFixUITests.swift */,
+				69CBF7BE1C27F117002D00F5 /* Info.plist */,
+			);
+			path = LigaFixUITests;
+			sourceTree = "<group>";
+		};
+		69CBF7E01C27F448002D00F5 /* About */ = {
+			isa = PBXGroup;
+			children = (
+				69CBF7F31C27F638002D00F5 /* AboutView.swift */,
+				69CBF7DE1C27F43C002D00F5 /* AboutViewController.swift */,
+			);
+			name = About;
+			sourceTree = "<group>";
+		};
+		69CBF7E91C27F469002D00F5 /* Focus */ = {
+			isa = PBXGroup;
+			children = (
+				69CBF7E11C27F462002D00F5 /* FocusView.swift */,
+				69CBF7E21C27F462002D00F5 /* FocusViewController.swift */,
+				69CBF7E31C27F462002D00F5 /* TimerType.swift */,
+				69CBF7E41C27F462002D00F5 /* TimerView.swift */,
+			);
+			name = Focus;
+			sourceTree = "<group>";
+		};
+		69CBF7EE1C27F488002D00F5 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				69CBF7EA1C27F482002D00F5 /* SettingsView.swift */,
+				69CBF7EB1C27F482002D00F5 /* SettingsViewController.swift */,
+			);
+			name = Settings;
+			sourceTree = "<group>";
+		};
+		69CBF7F11C27F4CB002D00F5 /* StyleKit */ = {
+			isa = PBXGroup;
+			children = (
+				69CBF7EF1C27F4C7002D00F5 /* TimerStyleKit.swift */,
+			);
+			name = StyleKit;
+			sourceTree = "<group>";
+		};
+		69CBF7F21C27F511002D00F5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				69CBF7A81C27F117002D00F5 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		69CBF7981C27F117002D00F5 /* LigaFix */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 69CBF7C11C27F117002D00F5 /* Build configuration list for PBXNativeTarget "LigaFix" */;
+			buildPhases = (
+				69CBF7951C27F117002D00F5 /* Sources */,
+				69CBF7961C27F117002D00F5 /* Frameworks */,
+				69CBF7971C27F117002D00F5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LigaFix;
+			productName = LigaFix;
+			productReference = 69CBF7991C27F117002D00F5 /* LigaFix.app */;
+			productType = "com.apple.product-type.application";
+		};
+		69CBF7AC1C27F117002D00F5 /* LigaFixTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 69CBF7C41C27F117002D00F5 /* Build configuration list for PBXNativeTarget "LigaFixTests" */;
+			buildPhases = (
+				69CBF7A91C27F117002D00F5 /* Sources */,
+				69CBF7AA1C27F117002D00F5 /* Frameworks */,
+				69CBF7AB1C27F117002D00F5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				69CBF7AF1C27F117002D00F5 /* PBXTargetDependency */,
+			);
+			name = LigaFixTests;
+			productName = LigaFixTests;
+			productReference = 69CBF7AD1C27F117002D00F5 /* LigaFixTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		69CBF7B71C27F117002D00F5 /* LigaFixUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 69CBF7C71C27F117002D00F5 /* Build configuration list for PBXNativeTarget "LigaFixUITests" */;
+			buildPhases = (
+				69CBF7B41C27F117002D00F5 /* Sources */,
+				69CBF7B51C27F117002D00F5 /* Frameworks */,
+				69CBF7B61C27F117002D00F5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				69CBF7BA1C27F117002D00F5 /* PBXTargetDependency */,
+			);
+			name = LigaFixUITests;
+			productName = LigaFixUITests;
+			productReference = 69CBF7B81C27F117002D00F5 /* LigaFixUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		69CBF7911C27F117002D00F5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = JiaDuan;
+				TargetAttributes = {
+					69CBF7981C27F117002D00F5 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = FYR7T527AW;
+					};
+					69CBF7AC1C27F117002D00F5 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = FYR7T527AW;
+						TestTargetID = 69CBF7981C27F117002D00F5;
+					};
+					69CBF7B71C27F117002D00F5 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = FYR7T527AW;
+						TestTargetID = 69CBF7981C27F117002D00F5;
+					};
+				};
+			};
+			buildConfigurationList = 69CBF7941C27F117002D00F5 /* Build configuration list for PBXProject "LigaFix" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 69CBF7901C27F117002D00F5;
+			productRefGroup = 69CBF79A1C27F117002D00F5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				69CBF7981C27F117002D00F5 /* LigaFix */,
+				69CBF7AC1C27F117002D00F5 /* LigaFixTests */,
+				69CBF7B71C27F117002D00F5 /* LigaFixUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		69CBF7971C27F117002D00F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69CBF7CD1C27F301002D00F5 /* LaunchScreen.storyboard in Resources */,
+				69CBF7F61C27F83B002D00F5 /* Main.storyboard in Resources */,
+				69CBF7A41C27F117002D00F5 /* Assets.xcassets in Resources */,
+				69CBF7CB1C27F2FB002D00F5 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69CBF7AB1C27F117002D00F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69CBF7B61C27F117002D00F5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		69CBF7951C27F117002D00F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69CBF7D41C27F31B002D00F5 /* DHNavigationController.swift in Sources */,
+				69CBF7E61C27F462002D00F5 /* FocusViewController.swift in Sources */,
+				69CBF7D21C27F31B002D00F5 /* AppDelegate.swift in Sources */,
+				69CBF7ED1C27F482002D00F5 /* SettingsViewController.swift in Sources */,
+				69CBF7F41C27F638002D00F5 /* AboutView.swift in Sources */,
+				69CBF7EC1C27F482002D00F5 /* SettingsView.swift in Sources */,
+				69CBF7DF1C27F43C002D00F5 /* AboutViewController.swift in Sources */,
+				69CBF7D31C27F31B002D00F5 /* Int+Extensions.swift in Sources */,
+				69CBF7E51C27F462002D00F5 /* FocusView.swift in Sources */,
+				69CBF7E81C27F462002D00F5 /* TimerView.swift in Sources */,
+				69CBF7F01C27F4C7002D00F5 /* TimerStyleKit.swift in Sources */,
+				69CBF7E71C27F462002D00F5 /* TimerType.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69CBF7A91C27F117002D00F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69CBF7B21C27F117002D00F5 /* LigaFixTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69CBF7B41C27F117002D00F5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69CBF7BD1C27F117002D00F5 /* LigaFixUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		69CBF7AF1C27F117002D00F5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 69CBF7981C27F117002D00F5 /* LigaFix */;
+			targetProxy = 69CBF7AE1C27F117002D00F5 /* PBXContainerItemProxy */;
+		};
+		69CBF7BA1C27F117002D00F5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 69CBF7981C27F117002D00F5 /* LigaFix */;
+			targetProxy = 69CBF7B91C27F117002D00F5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		69CBF7BF1C27F117002D00F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		69CBF7C01C27F117002D00F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		69CBF7C21C27F117002D00F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = LigaFix/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Ahrodite.LigaFix;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "LigaFix/LigaFix-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		69CBF7C31C27F117002D00F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = LigaFix/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Ahrodite.LigaFix;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "LigaFix/LigaFix-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		69CBF7C51C27F117002D00F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = LigaFixTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Ahrodite.LigaFixTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LigaFix.app/LigaFix";
+			};
+			name = Debug;
+		};
+		69CBF7C61C27F117002D00F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = LigaFixTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Ahrodite.LigaFixTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LigaFix.app/LigaFix";
+			};
+			name = Release;
+		};
+		69CBF7C81C27F117002D00F5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = LigaFixUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Ahrodite.LigaFixUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = LigaFix;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		69CBF7C91C27F117002D00F5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = LigaFixUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Ahrodite.LigaFixUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = LigaFix;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		69CBF7941C27F117002D00F5 /* Build configuration list for PBXProject "LigaFix" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69CBF7BF1C27F117002D00F5 /* Debug */,
+				69CBF7C01C27F117002D00F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		69CBF7C11C27F117002D00F5 /* Build configuration list for PBXNativeTarget "LigaFix" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69CBF7C21C27F117002D00F5 /* Debug */,
+				69CBF7C31C27F117002D00F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		69CBF7C41C27F117002D00F5 /* Build configuration list for PBXNativeTarget "LigaFixTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69CBF7C51C27F117002D00F5 /* Debug */,
+				69CBF7C61C27F117002D00F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		69CBF7C71C27F117002D00F5 /* Build configuration list for PBXNativeTarget "LigaFixUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69CBF7C81C27F117002D00F5 /* Debug */,
+				69CBF7C91C27F117002D00F5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 69CBF7911C27F117002D00F5 /* Project object */;
+}
