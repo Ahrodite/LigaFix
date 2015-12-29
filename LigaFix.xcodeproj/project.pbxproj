@@ -7,6 +7,44 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		69074F511C2A4A6300D4500F /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69074F501C2A4A6300D4500F /* SettingsViewController.swift */; };
+		69074F581C2A52CA00D4500F /* FormBaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69074F551C2A52CA00D4500F /* FormBaseCell.swift */; };
+		69074F591C2A52CA00D4500F /* FormTitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69074F561C2A52CA00D4500F /* FormTitleCell.swift */; };
+		69074F5A1C2A52CA00D4500F /* FormValueCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69074F571C2A52CA00D4500F /* FormValueCell.swift */; };
+		69074F661C2A52EA00D4500F /* FormButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69074F5B1C2A52EA00D4500F /* FormButtonCell.swift */; };
+		69074F671C2A52EA00D4500F /* FormCheckCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69074F5C1C2A52EA00D4500F /* FormCheckCell.swift */; };
+		69074F681C2A52EA00D4500F /* FormDateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69074F5D1C2A52EA00D4500F /* FormDateCell.swift */; };
+		69074F691C2A52EA00D4500F /* FormPickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69074F5E1C2A52EA00D4500F /* FormPickerCell.swift */; };
+		69074F6A1C2A52EA00D4500F /* FormSegmentedControlCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69074F5F1C2A52EA00D4500F /* FormSegmentedControlCell.swift */; };
+		69074F6B1C2A52EA00D4500F /* FormSelectorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69074F601C2A52EA00D4500F /* FormSelectorCell.swift */; };
+		69074F6C1C2A52EA00D4500F /* FormSliderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69074F611C2A52EA00D4500F /* FormSliderCell.swift */; };
+		69074F6D1C2A52EA00D4500F /* FormStepperCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69074F621C2A52EA00D4500F /* FormStepperCell.swift */; };
+		69074F6E1C2A52EA00D4500F /* FormSwitchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69074F631C2A52EA00D4500F /* FormSwitchCell.swift */; };
+		69074F6F1C2A52EA00D4500F /* FormTextFieldCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69074F641C2A52EA00D4500F /* FormTextFieldCell.swift */; };
+		69074F701C2A52EA00D4500F /* FormTextViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69074F651C2A52EA00D4500F /* FormTextViewCell.swift */; };
+		69074F751C2A531B00D4500F /* FormOptionsSelectorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69074F721C2A531B00D4500F /* FormOptionsSelectorController.swift */; };
+		69074F761C2A531B00D4500F /* FormSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69074F731C2A531B00D4500F /* FormSelector.swift */; };
+		69074F771C2A531B00D4500F /* FormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69074F741C2A531B00D4500F /* FormViewController.swift */; };
+		69074F7C1C2A534800D4500F /* FormDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69074F791C2A534800D4500F /* FormDescriptor.swift */; };
+		69074F7D1C2A534800D4500F /* FormRowDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69074F7A1C2A534800D4500F /* FormRowDescriptor.swift */; };
+		69074F7E1C2A534800D4500F /* FormSectionDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69074F7B1C2A534800D4500F /* FormSectionDescriptor.swift */; };
+		69074F811C2A536600D4500F /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 69074F801C2A536600D4500F /* Info.plist */; };
+		69074F8B1C2B95AA00D4500F /* UsernameEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69074F8A1C2B95AA00D4500F /* UsernameEditViewController.swift */; };
+		69074FCC1C2BC79A00D4500F /* TrainSetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69074FCB1C2BC79A00D4500F /* TrainSetViewController.swift */; };
+		69074FD51C2BDB2700D4500F /* RecoveryCase+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69074FCD1C2BDB2700D4500F /* RecoveryCase+CoreDataProperties.swift */; };
+		69074FD61C2BDB2700D4500F /* RecoveryCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69074FCE1C2BDB2700D4500F /* RecoveryCase.swift */; };
+		69074FD71C2BDB2700D4500F /* IDDict+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69074FCF1C2BDB2700D4500F /* IDDict+CoreDataProperties.swift */; };
+		69074FD81C2BDB2700D4500F /* IDDict.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69074FD01C2BDB2700D4500F /* IDDict.swift */; };
+		69074FD91C2BDB2700D4500F /* TrainningRecord+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69074FD11C2BDB2700D4500F /* TrainningRecord+CoreDataProperties.swift */; };
+		69074FDA1C2BDB2700D4500F /* TrainningRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69074FD21C2BDB2700D4500F /* TrainningRecord.swift */; };
+		69074FDB1C2BDB2700D4500F /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69074FD31C2BDB2700D4500F /* User+CoreDataProperties.swift */; };
+		69074FDC1C2BDB2700D4500F /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69074FD41C2BDB2700D4500F /* User.swift */; };
+		69074FDE1C2BEA9A00D4500F /* FormIndicatorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69074FDD1C2BEA9A00D4500F /* FormIndicatorCell.swift */; };
+		69074FE01C2D139000D4500F /* UserSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69074FDF1C2D139000D4500F /* UserSingleton.swift */; };
+		69074FE21C2D17A400D4500F /* IDDictSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69074FE11C2D17A400D4500F /* IDDictSingleton.swift */; };
+		69074FE61C2F960700D4500F /* BirthdayEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69074FE51C2F960700D4500F /* BirthdayEditViewController.swift */; };
+		69074FE91C2FCBAF00D4500F /* GenderEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69074FE81C2FCBAF00D4500F /* GenderEditViewController.swift */; };
+		69074FEB1C2FDD2500D4500F /* SelectUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69074FEA1C2FDD2500D4500F /* SelectUserViewController.swift */; };
 		69CBF8071C28C8F3002D00F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CBF8061C28C8F3002D00F5 /* AppDelegate.swift */; };
 		69CBF80C1C28C8F3002D00F5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69CBF80A1C28C8F3002D00F5 /* Main.storyboard */; };
 		69CBF80F1C28C8F3002D00F5 /* LigaFix.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 69CBF80D1C28C8F3002D00F5 /* LigaFix.xcdatamodeld */; };
@@ -37,6 +75,45 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		69074F501C2A4A6300D4500F /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		69074F551C2A52CA00D4500F /* FormBaseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FormBaseCell.swift; path = SwiftForms/cells/base/FormBaseCell.swift; sourceTree = "<group>"; };
+		69074F561C2A52CA00D4500F /* FormTitleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FormTitleCell.swift; path = SwiftForms/cells/base/FormTitleCell.swift; sourceTree = "<group>"; };
+		69074F571C2A52CA00D4500F /* FormValueCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FormValueCell.swift; path = SwiftForms/cells/base/FormValueCell.swift; sourceTree = "<group>"; };
+		69074F5B1C2A52EA00D4500F /* FormButtonCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FormButtonCell.swift; path = SwiftForms/cells/FormButtonCell.swift; sourceTree = "<group>"; };
+		69074F5C1C2A52EA00D4500F /* FormCheckCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FormCheckCell.swift; path = SwiftForms/cells/FormCheckCell.swift; sourceTree = "<group>"; };
+		69074F5D1C2A52EA00D4500F /* FormDateCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FormDateCell.swift; path = SwiftForms/cells/FormDateCell.swift; sourceTree = "<group>"; };
+		69074F5E1C2A52EA00D4500F /* FormPickerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FormPickerCell.swift; path = SwiftForms/cells/FormPickerCell.swift; sourceTree = "<group>"; };
+		69074F5F1C2A52EA00D4500F /* FormSegmentedControlCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FormSegmentedControlCell.swift; path = SwiftForms/cells/FormSegmentedControlCell.swift; sourceTree = "<group>"; };
+		69074F601C2A52EA00D4500F /* FormSelectorCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FormSelectorCell.swift; path = SwiftForms/cells/FormSelectorCell.swift; sourceTree = "<group>"; };
+		69074F611C2A52EA00D4500F /* FormSliderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FormSliderCell.swift; path = SwiftForms/cells/FormSliderCell.swift; sourceTree = "<group>"; };
+		69074F621C2A52EA00D4500F /* FormStepperCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FormStepperCell.swift; path = SwiftForms/cells/FormStepperCell.swift; sourceTree = "<group>"; };
+		69074F631C2A52EA00D4500F /* FormSwitchCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FormSwitchCell.swift; path = SwiftForms/cells/FormSwitchCell.swift; sourceTree = "<group>"; };
+		69074F641C2A52EA00D4500F /* FormTextFieldCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FormTextFieldCell.swift; path = SwiftForms/cells/FormTextFieldCell.swift; sourceTree = "<group>"; };
+		69074F651C2A52EA00D4500F /* FormTextViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FormTextViewCell.swift; path = SwiftForms/cells/FormTextViewCell.swift; sourceTree = "<group>"; };
+		69074F721C2A531B00D4500F /* FormOptionsSelectorController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FormOptionsSelectorController.swift; path = SwiftForms/controllers/FormOptionsSelectorController.swift; sourceTree = "<group>"; };
+		69074F731C2A531B00D4500F /* FormSelector.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FormSelector.swift; path = SwiftForms/controllers/FormSelector.swift; sourceTree = "<group>"; };
+		69074F741C2A531B00D4500F /* FormViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FormViewController.swift; path = SwiftForms/controllers/FormViewController.swift; sourceTree = "<group>"; };
+		69074F791C2A534800D4500F /* FormDescriptor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FormDescriptor.swift; path = SwiftForms/descriptors/FormDescriptor.swift; sourceTree = "<group>"; };
+		69074F7A1C2A534800D4500F /* FormRowDescriptor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FormRowDescriptor.swift; path = SwiftForms/descriptors/FormRowDescriptor.swift; sourceTree = "<group>"; };
+		69074F7B1C2A534800D4500F /* FormSectionDescriptor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FormSectionDescriptor.swift; path = SwiftForms/descriptors/FormSectionDescriptor.swift; sourceTree = "<group>"; };
+		69074F7F1C2A535E00D4500F /* SwiftForms.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = SwiftForms.h; path = SwiftForms/SwiftForms.h; sourceTree = "<group>"; };
+		69074F801C2A536600D4500F /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = SwiftForms/Info.plist; sourceTree = "<group>"; };
+		69074F8A1C2B95AA00D4500F /* UsernameEditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UsernameEditViewController.swift; sourceTree = "<group>"; };
+		69074FCB1C2BC79A00D4500F /* TrainSetViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainSetViewController.swift; sourceTree = "<group>"; };
+		69074FCD1C2BDB2700D4500F /* RecoveryCase+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "RecoveryCase+CoreDataProperties.swift"; path = "LigaFix/DataModel/RecoveryCase+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		69074FCE1C2BDB2700D4500F /* RecoveryCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RecoveryCase.swift; path = LigaFix/DataModel/RecoveryCase.swift; sourceTree = "<group>"; };
+		69074FCF1C2BDB2700D4500F /* IDDict+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "IDDict+CoreDataProperties.swift"; path = "LigaFix/DataModel/IDDict+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		69074FD01C2BDB2700D4500F /* IDDict.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IDDict.swift; path = LigaFix/DataModel/IDDict.swift; sourceTree = "<group>"; };
+		69074FD11C2BDB2700D4500F /* TrainningRecord+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "TrainningRecord+CoreDataProperties.swift"; path = "LigaFix/DataModel/TrainningRecord+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		69074FD21C2BDB2700D4500F /* TrainningRecord.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TrainningRecord.swift; path = LigaFix/DataModel/TrainningRecord.swift; sourceTree = "<group>"; };
+		69074FD31C2BDB2700D4500F /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "User+CoreDataProperties.swift"; path = "LigaFix/DataModel/User+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		69074FD41C2BDB2700D4500F /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = LigaFix/DataModel/User.swift; sourceTree = "<group>"; };
+		69074FDD1C2BEA9A00D4500F /* FormIndicatorCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FormIndicatorCell.swift; path = SwiftForms/cells/FormIndicatorCell.swift; sourceTree = "<group>"; };
+		69074FDF1C2D139000D4500F /* UserSingleton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserSingleton.swift; path = LigaFix/DataModel/UserSingleton.swift; sourceTree = "<group>"; };
+		69074FE11C2D17A400D4500F /* IDDictSingleton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IDDictSingleton.swift; path = LigaFix/DataModel/IDDictSingleton.swift; sourceTree = "<group>"; };
+		69074FE51C2F960700D4500F /* BirthdayEditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BirthdayEditViewController.swift; sourceTree = "<group>"; };
+		69074FE81C2FCBAF00D4500F /* GenderEditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenderEditViewController.swift; sourceTree = "<group>"; };
+		69074FEA1C2FDD2500D4500F /* SelectUserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectUserViewController.swift; sourceTree = "<group>"; };
 		69CBF8031C28C8F3002D00F5 /* LigaFix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LigaFix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69CBF8061C28C8F3002D00F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		69CBF80B1C28C8F3002D00F5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -83,6 +160,98 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		69074F521C2A529100D4500F /* SwiftForms */ = {
+			isa = PBXGroup;
+			children = (
+				69074F531C2A529900D4500F /* cells */,
+				69074F711C2A530C00D4500F /* controllers */,
+				69074F781C2A533C00D4500F /* descriptors */,
+				69074F7F1C2A535E00D4500F /* SwiftForms.h */,
+				69074F801C2A536600D4500F /* Info.plist */,
+			);
+			name = SwiftForms;
+			sourceTree = "<group>";
+		};
+		69074F531C2A529900D4500F /* cells */ = {
+			isa = PBXGroup;
+			children = (
+				69074F541C2A52B800D4500F /* base */,
+				69074FDD1C2BEA9A00D4500F /* FormIndicatorCell.swift */,
+				69074F5B1C2A52EA00D4500F /* FormButtonCell.swift */,
+				69074F5C1C2A52EA00D4500F /* FormCheckCell.swift */,
+				69074F5D1C2A52EA00D4500F /* FormDateCell.swift */,
+				69074F5E1C2A52EA00D4500F /* FormPickerCell.swift */,
+				69074F5F1C2A52EA00D4500F /* FormSegmentedControlCell.swift */,
+				69074F601C2A52EA00D4500F /* FormSelectorCell.swift */,
+				69074F611C2A52EA00D4500F /* FormSliderCell.swift */,
+				69074F621C2A52EA00D4500F /* FormStepperCell.swift */,
+				69074F631C2A52EA00D4500F /* FormSwitchCell.swift */,
+				69074F641C2A52EA00D4500F /* FormTextFieldCell.swift */,
+				69074F651C2A52EA00D4500F /* FormTextViewCell.swift */,
+			);
+			name = cells;
+			sourceTree = "<group>";
+		};
+		69074F541C2A52B800D4500F /* base */ = {
+			isa = PBXGroup;
+			children = (
+				69074F551C2A52CA00D4500F /* FormBaseCell.swift */,
+				69074F561C2A52CA00D4500F /* FormTitleCell.swift */,
+				69074F571C2A52CA00D4500F /* FormValueCell.swift */,
+			);
+			name = base;
+			sourceTree = "<group>";
+		};
+		69074F711C2A530C00D4500F /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				69074F721C2A531B00D4500F /* FormOptionsSelectorController.swift */,
+				69074F731C2A531B00D4500F /* FormSelector.swift */,
+				69074F741C2A531B00D4500F /* FormViewController.swift */,
+			);
+			name = controllers;
+			sourceTree = "<group>";
+		};
+		69074F781C2A533C00D4500F /* descriptors */ = {
+			isa = PBXGroup;
+			children = (
+				69074F791C2A534800D4500F /* FormDescriptor.swift */,
+				69074F7A1C2A534800D4500F /* FormRowDescriptor.swift */,
+				69074F7B1C2A534800D4500F /* FormSectionDescriptor.swift */,
+			);
+			name = descriptors;
+			sourceTree = "<group>";
+		};
+		69074FC81C2BA0A000D4500F /* DataModel */ = {
+			isa = PBXGroup;
+			children = (
+				69074FCD1C2BDB2700D4500F /* RecoveryCase+CoreDataProperties.swift */,
+				69074FCE1C2BDB2700D4500F /* RecoveryCase.swift */,
+				69074FCF1C2BDB2700D4500F /* IDDict+CoreDataProperties.swift */,
+				69074FD01C2BDB2700D4500F /* IDDict.swift */,
+				69074FE11C2D17A400D4500F /* IDDictSingleton.swift */,
+				69074FD11C2BDB2700D4500F /* TrainningRecord+CoreDataProperties.swift */,
+				69074FD21C2BDB2700D4500F /* TrainningRecord.swift */,
+				69074FD31C2BDB2700D4500F /* User+CoreDataProperties.swift */,
+				69074FD41C2BDB2700D4500F /* User.swift */,
+				69074FDF1C2D139000D4500F /* UserSingleton.swift */,
+			);
+			name = DataModel;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		69074FE71C2FC65200D4500F /* SettingsView */ = {
+			isa = PBXGroup;
+			children = (
+				69074FEA1C2FDD2500D4500F /* SelectUserViewController.swift */,
+				69074F8A1C2B95AA00D4500F /* UsernameEditViewController.swift */,
+				69074FE81C2FCBAF00D4500F /* GenderEditViewController.swift */,
+				69074FE51C2F960700D4500F /* BirthdayEditViewController.swift */,
+				69074FCB1C2BC79A00D4500F /* TrainSetViewController.swift */,
+			);
+			name = SettingsView;
+			sourceTree = "<group>";
+		};
 		69CBF7FA1C28C8F3002D00F5 = {
 			isa = PBXGroup;
 			children = (
@@ -106,15 +275,19 @@
 		69CBF8051C28C8F3002D00F5 /* LigaFix */ = {
 			isa = PBXGroup;
 			children = (
+				69074F521C2A529100D4500F /* SwiftForms */,
 				69CBF84E1C294849002D00F5 /* ASProgressPopUpView */,
-				69CBF8061C28C8F3002D00F5 /* AppDelegate.swift */,
 				69CBF80A1C28C8F3002D00F5 /* Main.storyboard */,
 				69CBF8121C28C8F3002D00F5 /* LaunchScreen.storyboard */,
 				69CBF8371C28F146002D00F5 /* Assets.xcassets */,
-				69CBF8151C28C8F3002D00F5 /* Info.plist */,
-				69CBF80D1C28C8F3002D00F5 /* LigaFix.xcdatamodeld */,
 				69CBF8391C2934F6002D00F5 /* LigaFix-Bridging-Header.h */,
+				69CBF8061C28C8F3002D00F5 /* AppDelegate.swift */,
 				69CBF84F1C294E5A002D00F5 /* TrainningViewController.swift */,
+				69074F501C2A4A6300D4500F /* SettingsViewController.swift */,
+				69074FE71C2FC65200D4500F /* SettingsView */,
+				69CBF80D1C28C8F3002D00F5 /* LigaFix.xcdatamodeld */,
+				69074FC81C2BA0A000D4500F /* DataModel */,
+				69CBF8151C28C8F3002D00F5 /* Info.plist */,
 			);
 			path = LigaFix;
 			sourceTree = "<group>";
@@ -255,6 +428,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69074F811C2A536600D4500F /* Info.plist in Resources */,
 				69CBF8141C28C8F3002D00F5 /* LaunchScreen.storyboard in Resources */,
 				69CBF8381C28F146002D00F5 /* Assets.xcassets in Resources */,
 				69CBF80C1C28C8F3002D00F5 /* Main.storyboard in Resources */,
@@ -282,11 +456,48 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				69074F691C2A52EA00D4500F /* FormPickerCell.swift in Sources */,
 				69CBF8501C294E5A002D00F5 /* TrainningViewController.swift in Sources */,
+				69074F7C1C2A534800D4500F /* FormDescriptor.swift in Sources */,
+				69074FEB1C2FDD2500D4500F /* SelectUserViewController.swift in Sources */,
+				69074FDB1C2BDB2700D4500F /* User+CoreDataProperties.swift in Sources */,
+				69074F751C2A531B00D4500F /* FormOptionsSelectorController.swift in Sources */,
+				69074F581C2A52CA00D4500F /* FormBaseCell.swift in Sources */,
+				69074FE21C2D17A400D4500F /* IDDictSingleton.swift in Sources */,
+				69074FDA1C2BDB2700D4500F /* TrainningRecord.swift in Sources */,
 				69CBF84D1C29483D002D00F5 /* ASProgressPopUpView.m in Sources */,
 				69CBF8071C28C8F3002D00F5 /* AppDelegate.swift in Sources */,
+				69074F6E1C2A52EA00D4500F /* FormSwitchCell.swift in Sources */,
+				69074F671C2A52EA00D4500F /* FormCheckCell.swift in Sources */,
+				69074F6C1C2A52EA00D4500F /* FormSliderCell.swift in Sources */,
+				69074F6B1C2A52EA00D4500F /* FormSelectorCell.swift in Sources */,
+				69074FE91C2FCBAF00D4500F /* GenderEditViewController.swift in Sources */,
+				69074F591C2A52CA00D4500F /* FormTitleCell.swift in Sources */,
+				69074FCC1C2BC79A00D4500F /* TrainSetViewController.swift in Sources */,
+				69074FDE1C2BEA9A00D4500F /* FormIndicatorCell.swift in Sources */,
+				69074FD51C2BDB2700D4500F /* RecoveryCase+CoreDataProperties.swift in Sources */,
+				69074F7E1C2A534800D4500F /* FormSectionDescriptor.swift in Sources */,
 				69CBF84C1C29483D002D00F5 /* ASPopUpView.m in Sources */,
 				69CBF80F1C28C8F3002D00F5 /* LigaFix.xcdatamodeld in Sources */,
+				69074FD71C2BDB2700D4500F /* IDDict+CoreDataProperties.swift in Sources */,
+				69074FE61C2F960700D4500F /* BirthdayEditViewController.swift in Sources */,
+				69074F771C2A531B00D4500F /* FormViewController.swift in Sources */,
+				69074F511C2A4A6300D4500F /* SettingsViewController.swift in Sources */,
+				69074F6A1C2A52EA00D4500F /* FormSegmentedControlCell.swift in Sources */,
+				69074FD61C2BDB2700D4500F /* RecoveryCase.swift in Sources */,
+				69074F6F1C2A52EA00D4500F /* FormTextFieldCell.swift in Sources */,
+				69074FE01C2D139000D4500F /* UserSingleton.swift in Sources */,
+				69074F5A1C2A52CA00D4500F /* FormValueCell.swift in Sources */,
+				69074FD91C2BDB2700D4500F /* TrainningRecord+CoreDataProperties.swift in Sources */,
+				69074FD81C2BDB2700D4500F /* IDDict.swift in Sources */,
+				69074F6D1C2A52EA00D4500F /* FormStepperCell.swift in Sources */,
+				69074F701C2A52EA00D4500F /* FormTextViewCell.swift in Sources */,
+				69074F8B1C2B95AA00D4500F /* UsernameEditViewController.swift in Sources */,
+				69074F661C2A52EA00D4500F /* FormButtonCell.swift in Sources */,
+				69074FDC1C2BDB2700D4500F /* User.swift in Sources */,
+				69074F761C2A531B00D4500F /* FormSelector.swift in Sources */,
+				69074F681C2A52EA00D4500F /* FormDateCell.swift in Sources */,
+				69074F7D1C2A534800D4500F /* FormRowDescriptor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,6 +642,7 @@
 				INFOPLIST_FILE = LigaFix/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_CFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Ahrodite.LigaFix;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "LigaFix/LigaFix-Bridging-Header.h";
@@ -447,6 +659,7 @@
 				INFOPLIST_FILE = LigaFix/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_CFLAGS = "";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Ahrodite.LigaFix;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "LigaFix/LigaFix-Bridging-Header.h";
