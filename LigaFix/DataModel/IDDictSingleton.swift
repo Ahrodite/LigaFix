@@ -24,7 +24,7 @@ class IDDictSingleton {
     
     private func initIDDict() {
         let fetchIDDict = NSFetchRequest(entityName: "IDDict")
-        let idDictPredicate = NSPredicate(format: "id = %@", 0)
+        let idDictPredicate = NSPredicate(format: "id = %@", NSNumber(int: 0))
         fetchIDDict.predicate = idDictPredicate
         var idDicts: NSArray?
         do {

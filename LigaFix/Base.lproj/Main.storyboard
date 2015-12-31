@@ -66,6 +66,8 @@
                         <segue destination="5Dk-YS-OMg" kind="show" id="Ok0-lO-A4A"/>
                         <segue destination="zhK-XY-GCt" kind="show" id="jG8-Ro-Zyk"/>
                         <segue destination="8BN-PE-dO6" kind="show" id="4Fv-bF-P7v"/>
+                        <segue destination="ueV-Oc-G3I" kind="show" id="vt9-wq-e6L"/>
+                        <segue destination="62I-c2-FNi" kind="show" id="uOu-ri-m89"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dcg-jJ-AHm" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -352,6 +354,62 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xl9-2j-06e" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3657" y="1521"/>
+        </scene>
+        <!--Select Case-->
+        <scene sceneID="RGM-6M-AsW">
+            <objects>
+                <tableViewController storyboardIdentifier="SelectCaseViewController" title="Select Case" id="ueV-Oc-G3I" customClass="SelectCaseViewController" customModule="LigaFix" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="FSp-T1-QVH">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="fg3-03-8Ac">
+                                <rect key="frame" x="0.0" y="113.5" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="fg3-03-8Ac" id="Jx7-Mb-Ipf">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="ueV-Oc-G3I" id="IPR-Vo-AB0"/>
+                            <outlet property="delegate" destination="ueV-Oc-G3I" id="xcn-bU-wRh"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PEy-jf-Lba" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4429" y="1521"/>
+        </scene>
+        <!--New Case-->
+        <scene sceneID="srh-Nm-CdK">
+            <objects>
+                <tableViewController storyboardIdentifier="NewCaseViewController" title="New Case" id="62I-c2-FNi" customClass="NewCaseViewController" customModule="LigaFix" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="hrH-eP-cfn">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="wqs-Lb-2kq">
+                                <rect key="frame" x="0.0" y="113.5" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wqs-Lb-2kq" id="Pem-WK-Nhj">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="62I-c2-FNi" id="FVl-G8-vMY"/>
+                            <outlet property="delegate" destination="62I-c2-FNi" id="glK-3r-bNj"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qvq-Ii-Q6A" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5203" y="1521"/>
         </scene>
         <!--Gender Edit View Controller-->
         <scene sceneID="Swz-m1-W6U">

@@ -17,7 +17,8 @@ class SettingsViewController: FormViewController {
     var username: String?
     var gender: String?
     var age: String?
-    var recoveryCase: String! = ""
+    var recoveryCase: String?
+    var daysFromOperation: String?
     
     required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -55,6 +56,8 @@ class SettingsViewController: FormViewController {
         username = UserSingleton.sharedInstance.getActiveUsername()
         gender = UserSingleton.sharedInstance.getGender()
         age = UserSingleton.sharedInstance.getAge()
+        recoveryCase = UserSingleton.sharedInstance.getCurrentCase()
+        daysFromOperation = UserSingleton.sharedInstance.getElapseDaysFromOperation()
     }
     
     private func loadForm() {
@@ -97,6 +100,17 @@ class SettingsViewController: FormViewController {
         } as DidSelectClosure
         userInfoSection.addRow(row)
         
+        let selectCaseSction = FormSectionDescriptor()
+        row = FormRowDescriptor(tag: "selectCaseButton", rowType: .Indicator, title: "手术时间", subtitle: recoveryCase)
+        row.configuration[FormRowDescriptor.Configuration.CellConfiguration] = ["titleLabel.textAlignment" : NSTextAlignment.Left.rawValue]
+        row.configuration[FormRowDescriptor.Configuration.DidSelectClosure] = {
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let selectCaseCtrl = storyboard.instantiateViewControllerWithIdentifier("SelectCaseViewController")
+            self.navigationController?.pushViewController(selectCaseCtrl, animated: true)
+        } as DidSelectClosure
+        selectCaseSction.addRow(row)
+        selectCaseSction.footerTitle = daysFromOperation != nil ? "距今" + daysFromOperation! + "天" : ""
+        
         // trainning project setting section
         let trainSetSection = FormSectionDescriptor()
         row = FormRowDescriptor(tag: "trainSetButton", rowType: .Button, title: "训练设置")
@@ -105,10 +119,10 @@ class SettingsViewController: FormViewController {
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             let trainSetCtrl = storyboard.instantiateViewControllerWithIdentifier("TrainSetViewController")
             self.navigationController?.pushViewController(trainSetCtrl, animated: true)
-            } as DidSelectClosure
+        } as DidSelectClosure
         trainSetSection.addRow(row)
     
-        form.sections = [userInfoSection, trainSetSection]
+        form.sections = [userInfoSection, selectCaseSction, trainSetSection]
         self.form = form
         
     }
