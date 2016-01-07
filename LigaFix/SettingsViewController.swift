@@ -17,7 +17,7 @@ class SettingsViewController: FormViewController {
     var username: String?
     var gender: String?
     var age: String?
-    var recoveryCase: String?
+    var recoveryCaseDateString: String?
     var daysFromOperation: String?
     
     required init(coder aDecoder: NSCoder) {
@@ -56,7 +56,7 @@ class SettingsViewController: FormViewController {
         username = UserSingleton.sharedInstance.getActiveUsername()
         gender = UserSingleton.sharedInstance.getGender()
         age = UserSingleton.sharedInstance.getAge()
-        recoveryCase = UserSingleton.sharedInstance.getCurrentCase()
+        recoveryCaseDateString = UserSingleton.sharedInstance.getCurrentCaseDateString()
         daysFromOperation = UserSingleton.sharedInstance.getElapseDaysFromOperation()
     }
     
@@ -101,7 +101,7 @@ class SettingsViewController: FormViewController {
         userInfoSection.addRow(row)
         
         let selectCaseSction = FormSectionDescriptor()
-        row = FormRowDescriptor(tag: "selectCaseButton", rowType: .Indicator, title: "手术时间", subtitle: recoveryCase)
+        row = FormRowDescriptor(tag: "selectCaseButton", rowType: .Indicator, title: "手术时间", subtitle: recoveryCaseDateString)
         row.configuration[FormRowDescriptor.Configuration.CellConfiguration] = ["titleLabel.textAlignment" : NSTextAlignment.Left.rawValue]
         row.configuration[FormRowDescriptor.Configuration.DidSelectClosure] = {
             let storyboard = UIStoryboard(name: "Main", bundle: nil)

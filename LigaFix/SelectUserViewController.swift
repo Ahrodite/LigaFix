@@ -50,7 +50,7 @@ class SelectUserViewController: FormViewController {
             for u in users! {
                 let user = u as! User
                 let username = user.getUsername()
-                let row: FormRowDescriptor! = FormRowDescriptor(tag: "userIndicator"+"\(no)", rowType: .Date, title: { (name: String?) -> String in
+                let row: FormRowDescriptor! = FormRowDescriptor(tag: "userIndicator"+"\(no)", rowType: .Indicator, title: { (name: String?) -> String in
                     if name != nil {
                         return name!
                     } else {
@@ -88,11 +88,7 @@ class SelectUserViewController: FormViewController {
         } as DidSelectClosure
         newUserSection.addRow(row)
         
-        if userListSection != nil {
-            form.sections = [userListSection!, newUserSection]
-        } else {
-            form.sections = [newUserSection]
-        }
+        form.sections = userListSection != nil ? [userListSection!, newUserSection] : [newUserSection]
         
         self.form = form
     }

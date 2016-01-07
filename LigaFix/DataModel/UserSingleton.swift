@@ -156,29 +156,67 @@ class UserSingleton {
         saveContext("setBirthday(date: NSDate?)")
     }
     
-    internal func getCurrentCase() -> String? {
-        var caseString: String?
-        if let id = self.user?.currentCaseID {
-            let currentCase = RecoveryCase(caseID: id)
-            if let operationDate = currentCase?.operationDate {
-                let formatter = NSDateFormatter()
-                formatter.dateFormat = "yyyy年MM月dd日"
-                caseString = formatter.stringFromDate(operationDate)
+    internal func getCurrentCase() -> RecoveryCase? {
+        var currentCase: RecoveryCase?
+        if let currentCaseID = self.user?.currentCaseID {
+            var cases: NSArray?
+            let fetchCases = NSFetchRequest(entityName: "RecoveryCase")
+            let casesPredicate = NSPredicate(format: "userID = %@ and id = %@", self.user!.id!, currentCaseID)
+            fetchCases.predicate = casesPredicate
+            do {
+                cases = try appDelegate.managedObjectContext.executeFetchRequest(fetchCases)
+            } catch let error as NSError {
+                print("=============error=============")
+                print("getCurrentCase() error")
+                print("fetch current case error")
+                print(error.localizedDescription)
+            }
+            if cases != nil && cases!.count > 0 {
+                currentCase = cases![0] as? RecoveryCase
             }
         }
         
-        return caseString
+        return currentCase
+    }
+    
+    internal func getCurrentCaseDateString() -> String? {
+        var dateString: String?
+        let currentCase = self.getCurrentCase()
+        if currentCase != nil {
+            dateString = currentCase!.getDateString()
+        }
+        return dateString
+    }
+    
+    internal func getAllCases() -> NSArray? {
+        var cases: NSArray?
+        let fetchCases = NSFetchRequest(entityName: "RecoveryCase")
+        let casesPredicate = NSPredicate(format: "userID = %@", self.user!.id!)
+        fetchCases.predicate = casesPredicate
+        do {
+            cases = try appDelegate.managedObjectContext.executeFetchRequest(fetchCases)
+        } catch let error as NSError {
+            print("=============error=============")
+            print("getAllCases() error")
+            print("fetch all cases error")
+            print(error.localizedDescription)
+        }
+        return cases
+    }
+    
+    internal func setCurrentCase(caseID: NSNumber?) {
+        if let id = caseID {
+            self.user?.currentCaseID = id
+        }
     }
     
     internal func getElapseDaysFromOperation() -> String? {
         var elapse: String?
-        if let id = self.user?.currentCaseID {
-            let currentCase = RecoveryCase(caseID: id)
-            if let operationDate = currentCase?.operationDate {
-                let component = NSCalendar.currentCalendar().components([.Year, .Month, .Day], fromDate: operationDate, toDate: NSDate(), options: NSCalendarOptions.MatchStrictly)
-                let days = component.day
-                elapse = String(days)
-            }
+        let currentCase = self.getCurrentCase()
+        if let operationDate = currentCase?.operationDate {
+            let component = NSCalendar.currentCalendar().components([.Year, .Month, .Day], fromDate: operationDate, toDate: NSDate(), options: NSCalendarOptions.MatchStrictly)
+            let days = component.day
+            elapse = String(days)
         }
         return elapse
     }
@@ -188,7 +226,12 @@ class UserSingleton {
             let context = appDelegate.managedObjectContext
             let newCase = RecoveryCase(entity: NSEntityDescription.entityForName("RecoveryCase", inManagedObjectContext: context)!, insertIntoManagedObjectContext: context)
             newCase.id = IDDictSingleton.sharedInstance.getCaseID()
-            self
+            self.user?.currentCaseID = newCase.id
+            newCase.operationDate = d
+            newCase.userID = self.user?.id
+            newCase.belongToUser = self.user
+            saveContext("addNewCase(date: NSDate)")
+//            self.user?.hasCasees
         }
     }
     

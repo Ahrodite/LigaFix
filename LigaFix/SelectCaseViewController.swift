@@ -9,6 +9,8 @@
 import UIKit
 
 class SelectCaseViewController: FormViewController {
+    
+    var cases: NSArray?
 
     required init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -30,7 +32,7 @@ class SelectCaseViewController: FormViewController {
     /// MARK: Private interface
     
     private func loadDate() {
-        
+        cases = UserSingleton.sharedInstance.getAllCases()
     }
     
     private func loadForm() {
@@ -40,18 +42,33 @@ class SelectCaseViewController: FormViewController {
         form.title = "选择案例"
         
         // user info section
-        let caseListSection = FormSectionDescriptor()
-        caseListSection.headerTitle = "已有案例"
-        
-        var row: FormRowDescriptor! = FormRowDescriptor(tag: "userInfoButton", rowType: .Button, title: "blabla")
-        row.configuration[FormRowDescriptor.Configuration.CellConfiguration] = ["titleLabel.textAlignment" : NSTextAlignment.Left.rawValue]
-        row.configuration[FormRowDescriptor.Configuration.DidSelectClosure] = {
+        var caseListSection: FormSectionDescriptor?
+        if cases != nil && cases?.count > 0 {
+            caseListSection = FormSectionDescriptor()
+            caseListSection!.headerTitle = "已有案例"
             
-        } as DidSelectClosure
-        caseListSection.addRow(row)
+            var no = 0
+            for c in cases! {
+                let _case = c as! RecoveryCase
+                let operationDateString = _case.getDateString()
+                let row: FormRowDescriptor! = FormRowDescriptor(tag: "userIndicator"+"\(no)", rowType: .Indicator, title: operationDateString != nil ? operationDateString! : "")
+                
+                row.configuration[FormRowDescriptor.Configuration.DidSelectClosure] = {
+                    UserSingleton.sharedInstance.setCurrentCase(_case.id)
+                    
+                    self.navigationController?.popToRootViewControllerAnimated(true)
+                    let settingsViewController = self.navigationController?.topViewController as! SettingsViewController
+                    settingsViewController.tabVSettings.reloadData()
+                } as DidSelectClosure
+                
+                caseListSection!.addRow(row)
+                
+                no++
+            }
+        }
         
         let newCaseSection = FormSectionDescriptor()
-        row = FormRowDescriptor(tag: "newCaseButton", rowType: .Button, title: "新案例")
+        let row = FormRowDescriptor(tag: "newCaseButton", rowType: .Button, title: "新案例")
         row.configuration[FormRowDescriptor.Configuration.DidSelectClosure] = {
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             let newCaseCtrl = storyboard.instantiateViewControllerWithIdentifier("NewCaseViewController")
@@ -59,7 +76,7 @@ class SelectCaseViewController: FormViewController {
         } as DidSelectClosure
         newCaseSection.addRow(row)
         
-        form.sections = [caseListSection, newCaseSection]
+        form.sections = caseListSection != nil ? [caseListSection!, newCaseSection] : [newCaseSection]
         self.form = form
     }
 

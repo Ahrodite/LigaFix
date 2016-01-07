@@ -37,7 +37,7 @@ class NewCaseViewController: FormViewController {
         
         let form = FormDescriptor()
         
-        form.title = "设置"
+        form.title = "新案例"
         
         // user info section
         let operationDateSection = FormSectionDescriptor()
@@ -54,14 +54,16 @@ class NewCaseViewController: FormViewController {
             let operationDate = formDict["operationDatePicker"] as? NSDate
             UserSingleton.sharedInstance.addNewCase(operationDate)
             
-            self.navigationController?.popViewControllerAnimated(true)
-            
-            let settingsViewController = self.navigationController?.topViewController as! SettingsViewController
-            let indexPath: NSIndexPath = NSIndexPath(forRow: 2, inSection: 0)
-            let cell = settingsViewController.tableView.cellForRowAtIndexPath(indexPath) as! FormValueCell
-            
-            cell.valueLabel.text = UserSingleton.sharedInstance.getAge()
-            } as DidSelectClosure
+            let vcs = self.navigationController?.viewControllers
+            for vc in vcs! {
+                if vc.isKindOfClass(SettingsViewController) {
+                    let settingsViewController = vc as! SettingsViewController
+                    settingsViewController.tabVSettings.reloadData()
+                }
+            }
+
+            self.navigationController?.popToRootViewControllerAnimated(true)
+        } as DidSelectClosure
         confirmSection.addRow(row)
         
         form.sections = [operationDateSection, confirmSection]

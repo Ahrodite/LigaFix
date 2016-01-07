@@ -47,4 +47,14 @@ class RecoveryCase: NSManagedObject {
     override init(entity: NSEntityDescription, insertIntoManagedObjectContext context: NSManagedObjectContext?) {
         super.init(entity: entity, insertIntoManagedObjectContext: context)
     }
+    
+    internal func getDateString() -> String? {
+        var ret: String?
+        if let operationDate = self.operationDate {
+            let formatter = NSDateFormatter()
+            formatter.dateFormat = "yyyy年MM月dd日"
+            ret = formatter.stringFromDate(operationDate)
+        }
+        return ret
+    }
 }

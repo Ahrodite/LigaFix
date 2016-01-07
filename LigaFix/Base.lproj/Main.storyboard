@@ -66,8 +66,7 @@
                         <segue destination="5Dk-YS-OMg" kind="show" id="Ok0-lO-A4A"/>
                         <segue destination="zhK-XY-GCt" kind="show" id="jG8-Ro-Zyk"/>
                         <segue destination="8BN-PE-dO6" kind="show" id="4Fv-bF-P7v"/>
-                        <segue destination="ueV-Oc-G3I" kind="show" id="vt9-wq-e6L"/>
-                        <segue destination="62I-c2-FNi" kind="show" id="uOu-ri-m89"/>
+                        <segue destination="ueV-Oc-G3I" kind="show" id="RcA-Wn-5Qc"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dcg-jJ-AHm" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -378,6 +377,9 @@
                             <outlet property="delegate" destination="ueV-Oc-G3I" id="xcn-bU-wRh"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <segue destination="62I-c2-FNi" kind="show" id="Q4K-oP-MIL"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PEy-jf-Lba" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
